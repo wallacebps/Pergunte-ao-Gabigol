@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+    
+}
+.logo h1{
+    font-size: 30px;
+    margin-right: 100px;
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu ul li{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 10px;
+    list-style: none;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold; 
+
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
