@@ -18,13 +18,19 @@
                 <li><a href="#">Títulos</a></li>
                 <li><a href="#">Vídeos</a></li>
                 <li><a href="#">Contribua</a></li> 
-                <li><a href="#">F.A.Q</a></li>
-                   
+                <li><a href="#">Quiz</a></li>                   
             </ul>
         </div>
     </header>
     <main>
-        
+        <div class="main">
+            <img src="./img/gabi-pergunte.png" id="img-resposta" alt="Foto pergunte ao Gabigol">
+            <h3 id="resposta-sim">RESPOSTA: SIM!!!</h3>
+            <H3 id="resposta-nao">RESPOSTA: NÃO!!!</H3></br>
+            <label for="pergunte">Digite a sua pergunte e o PRÍNCIPE responderá:</label></br>
+            <input type="text" id="pergunte" size="50%" placeholder="Só vale perguntas de 'sim' ou não'"></br>
+            <button onclick="perguntando()" id="btn-enviar"  disabled="disabled">Enviar</button>
+        </div>
     </main>
 
 
@@ -33,6 +39,6 @@
 
 
 
-    <script src="./script.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 </html>
