@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(./img/background.jpg);
+    background-size:cover;
+}
+body::after{
+    content: '';
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: -1;
 }
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: rgba(103, 26, 26, 0.8);
+    color: white;
+    width: 100%
+    
 }
 .logo{
     display: flex;
@@ -20,8 +41,10 @@ header{
     
 }
 .logo h1{
-    font-size: 30px;
-    margin-right: 100px;
+    font-size: 20px;
+    margin-right: 330px;
+    white-space: nowrap;
+    
 }
 .menu ul{
     display: flex;
@@ -32,26 +55,168 @@ header{
     justify-content: space-around;
     padding: 5px 10px;
     list-style: none;
-    border: 1px solid black;
     margin: 5px;
     border-radius: 20px;
     font-weight: bold; 
+    font-size: 15px;
+    
 }
 .menu a{
     text-decoration: none;
-    color: black;
+    color: white
 }
 .main{
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;   
+    padding-top: 50px;
+    padding: 50px 0px;
+    margin: 0;
 }
 .main img{
-    width: 30%;
-    border: 1px solid white;
+    width: 250px;
+    border: 3px solid white;
     height: 250px;
 }   
-#resposta-sim, #resposta-nao{
+#resposta-sim{
     display:none;
+    margin-top: 10px;
+    color: green;
+    background-color: rgba(242, 242, 242, 0.8);
+    padding: 0px 10px;   
+}
+#resposta-nao{
+    display:none;
+    margin-top: 10px;
+    color:red;
+    background-color: rgba(242, 242, 242, 0.8);
+    padding: 0px 10px;
+}
+.destaque{
+    color:red;
+    font-weight: bolder;
+}
+.pergunte-titulo{
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+#pergunte{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 0.8);
+    
+}
+#btn-enviar{
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(103, 26, 26, 0.8);
+    position:relative;
+    bottom: 0;
+    width:100%;
+    color:white;
+    
+}
+footer ul{
+    display: flex;    
+}
+footer ul li{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 10px;
+    list-style: none;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold; 
+    font-size: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: white
+}
+.footer-center{
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+       
+} 
+.footer-center a{
+    margin-left: 10px;
+}
+.criador{
+    color:red;
+}
+.footer-right{
+   margin-right: 45px;
+}
+
+/* Página de títulos: */ 
+.main h1{
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color:red;
+
+}
+.main h1, p{
+    background-color: white;
+    padding: 0px 10px;
+    font-weight: bold;
+   
+}
+.main ul{
+    background-color: white;
+    padding: 0 5px;
+}
+.campeonatos{
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:1100px){
+    .logo img{
+        width: 50px;      
+    }
+    .logo h1{
+        margin-right: 100px;           
+    }
+}
+@media (max-width:855px){
+    header{
+        flex-direction: column;  
+    }
+    .logo img{
+        margin-left: 150px;
+        margin-right: 0;
+    }
+    .logo{
+        justify-content: center;
+    }
+}
+@media (max-width:550px){
+    .menu ul{
+        flex-direction: column;    
+    }
+    .menu ul li{
+                
+        font-size: 20px;
+        
+    }
+    .menu a{
+        text-decoration: none;
+        color: white
+    }
 }

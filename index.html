@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pergunte ao Gabigol</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    
     <header>
         <div class="logo">
             <a href="#"><img src="./img/logo.png" alt="Logo do Gabigol"></a>
-            <h1>Deixe que o PREDESTINADO decida por você!</h1>
+            <h1>Deixe que o <span class="destaque">PREDESTINADO</span> decida por você!</h1>
         </div>    
         <div class="menu">
             <ul>
-                <li><a href="#">Títulos</a></li>
+                <li><a href="titulos.html">Títulos</a></li>
                 <li><a href="#">Vídeos</a></li>
                 <li><a href="#">Contribua</a></li> 
                 <li><a href="#">Quiz</a></li>                   
@@ -25,14 +27,28 @@
     <main>
         <div class="main">
             <img src="./img/gabi-pergunte.png" id="img-resposta" alt="Foto pergunte ao Gabigol">
-            <h3 id="resposta-sim">RESPOSTA: SIM!!!</h3>
-            <H3 id="resposta-nao">RESPOSTA: NÃO!!!</H3></br>
-            <label for="pergunte">Digite a sua pergunte e o PRÍNCIPE responderá:</label></br>
-            <input type="text" id="pergunte" size="50%" placeholder="Só vale perguntas de 'sim' ou não'"></br>
+            <h3 id="resposta-sim">SIM!</h3>
+            <h3 id="resposta-nao">NÃO!</h3></br>
+            <label for="pergunte" class="pergunte-titulo">Digite a sua pergunta e o <span class="destaque">PRÍNCIPE</span> responderá:</label></br>
+            <input type="text" id="pergunte" size="45%" placeholder="Só vale perguntas de 'sim' ou não'"></br>
             <button onclick="perguntando()" id="btn-enviar"  disabled="disabled">Enviar</button>
         </div>
     </main>
-
+    <footer>
+        
+        <div class="footer-center">
+            <h6>Feito por <span class="criador">Wallace Bruno</span></h6>
+            <a target="_blank" href="https://www.linkedin.com/in/wallacebps/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+            <a target="_blank" href="https://github.com/wallacebps/"><i class="fa fa-github" style="font-size:24px"></i></a>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="#">Contribua</a></li> 
+                <li><a href="#">Quiz</a></li>                   
+            </ul>
+        </div>    
+        
+    </footer>
 
 
 

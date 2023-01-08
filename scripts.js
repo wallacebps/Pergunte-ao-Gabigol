@@ -17,12 +17,12 @@ function perguntando() {
     
     if(random == 0){
         img.setAttribute('src','./img/gabigol-nao.jpg');
-        resp_sim.style.display = 'block';
-        resp_nao.style.display = 'none';
+        resp_sim.style.display = 'none';
+        resp_nao.style.display = 'block';
     } else{
         img.setAttribute('src', './img/gabigol-sim.jpg');
-        resp_nao.style.display = 'block';
-        resp_sim.style.display = 'none';
+        resp_nao.style.display = 'none';
+        resp_sim.style.display = 'block';
     }  
     pergunte.value = ''
     btn.disabled=true
