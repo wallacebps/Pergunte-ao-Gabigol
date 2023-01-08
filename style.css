@@ -8,6 +8,7 @@
 body{
     background-image: url(./img/background.jpg);
     background-size:cover;
+    background-repeat:inherit;
 }
 body::after{
     content: '';
@@ -26,14 +27,14 @@ header{
     align-items: center;
     background-color: rgba(103, 26, 26, 0.8);
     color: white;
-    width: 100%
+    width: 100%;
     
 }
 .logo{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 800px;
+    width: 100%;
 }
 .logo img{
     width: 50px;
@@ -43,7 +44,7 @@ header{
 .logo h1{
     font-size: 20px;
     margin-right: 330px;
-    white-space: nowrap;
+    
     
 }
 .menu ul{
@@ -74,7 +75,7 @@ header{
     margin: 0;
 }
 .main img{
-    width: 30%;
+    width: 350px;
     border: 3px solid white;
     height: 250px;
 }   
@@ -170,7 +171,7 @@ footer a{
     color:red;
 
 }
-.main h1, p{
+.main h1, .main p{
     background-color: white;
     padding: 0px 10px;
     font-weight: bold;
@@ -184,6 +185,18 @@ footer a{
     font-weight: bold;
 }
 
+/* CONTRIBUA */
+.contribua{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+.contribua h2{
+    margin: 100px 0 20px 0;
+}
+.contribua p{
+    font-weight: bold;
+}
 /* RESPONSIVIDADE */
 
 @media (max-width:1100px){
@@ -206,17 +219,63 @@ footer a{
         justify-content: center;
     }
 }
+@media (max-width:855px){
+    .logo h1{
+        font-size: 15px;
+    }
+}
 @media (max-width:550px){
+    .logo img{
+        display: none;  
+    }
+    .logo h1{
+        font-size: 10px;
+        margin-right: 0;
+    }
     .menu ul{
         flex-direction: column;    
     }
-    .menu ul li{
-                
-        font-size: 20px;
-        
+    .menu ul li{       
+        font-size: 20px; 
     }
     .menu a{
         text-decoration: none;
         color: white
+    }
+}
+@media (max-width:435px){
+    .main img{
+        width: 280px;
+        height: 180px;
+    }
+    .pergunte-titulo{
+        font-size: 13px;
+    }
+    footer{
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .footer-right{
+        margin-right: 0;
+    }
+    .footer-right ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .footer-center{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .saber-mais{
+        margin-bottom: 50px;
+    }
+    .footer-absolute{
+        position: absolute;
     }
 }
